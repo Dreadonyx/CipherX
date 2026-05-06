@@ -1,4 +1,4 @@
-# 🔓 CipherX
+#  CipherX
 
 A multi-layer CTF cipher/encoding auto-cracker for your terminal. Give it a ciphertext — it figures out the encoding stack and peels it layer by layer until it finds your flag.
 
@@ -8,13 +8,13 @@ Input: 565564506533706f6557643258336c7562484a6c583264795a6d6439
   Layer 2: Base64  → UGO{zhygv_ynlre_grfg}
   Layer 3: ROT13   → HTB{multi_layer_test}
 
-✅ FLAG FOUND: HTB{multi_layer_test}
+FLAG FOUND: HTB{multi_layer_test}
 [Chain] Hex → Base64 → ROT13
 ```
 
 ---
 
-## ⚙️ Installation
+##  Installation
 
 ```bash
 git clone https://github.com/Dreadonyx/CipherX.git
@@ -24,7 +24,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🚀 Usage
+##  Usage
 
 ### Auto-crack mode
 ```bash
@@ -53,7 +53,7 @@ python main.py -d "SGVsbG8="
 
 ---
 
-## 🧩 Supported Techniques
+##  Supported Techniques
 
 ### Encodings (auto-detected + manual)
 | Encoding | Notes |
@@ -95,7 +95,7 @@ python main.py -d "SGVsbG8="
 
 ---
 
-## 🧠 How Auto-Detection Works
+##  How Auto-Detection Works
 
 CipherX uses two layers to decide when it's done:
 
@@ -112,7 +112,7 @@ Score ≥ 6 = plaintext found. Score < threshold = keep decoding.
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 CipherX/
@@ -149,7 +149,7 @@ CipherX/
 
 ---
 
-## 🧪 Test It
+##  Test It
 
 ```bash
 # Single layer Base64
@@ -164,7 +164,7 @@ python main.py -a "565564506533706f6557643258336c7562484a6c583264795a6d6439" --f
 
 ---
 
-## 📦 Dependencies
+##  Dependencies
 
 ```
 requests        — online hash lookup
@@ -175,8 +175,8 @@ Pillow          — LSB steganography
 
 ---
 
-## 👤 Author
+##  Author
 
 **Dreadonyx** — [github.com/Dreadonyx](https://github.com/Dreadonyx)
 
-> ⚠️ For CTF and educational use only.
+>  For CTF and educational use only.
